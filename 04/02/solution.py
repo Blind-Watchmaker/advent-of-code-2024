@@ -5,8 +5,6 @@ class Solution:
     def __init__(self, word):
         self.word = word
         self._reversed_word = word[::-1]
-        self._pattern = rf"{self.word}"
-        self._reversed_pattern = rf"{self._reversed_word}"
 
     def _parse_input(self, file_path):
         with open(file_path, "r") as file:
